@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<title></title>
+	<style type="text/css">
+		.background{
+			background-color: #263034;
+			padding-top: 60px;
+		}
+		.btn1{
+      background-color: #091418;
+      color: white;
+    		}
+		.border{
+			border: 1px solid black;
+			padding: 10px;
+		}
+	</style>
+</head>
+<body class="container background text-white">
+	<div class="border">
+	<h3 class="text-white text-center">Qualifications</h3>
+<form>
+  <div class="row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Education(Institution+CGPA)">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Work Experience">
+    </div>
+  </div>
+</form>
+<br>
+<form>
+  <div class="row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Characteristic/personality">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Speciality & skills">
+    </div>
+  </div>
+</form>
+<br>
+<button class="btn btn1">Submit</button>
+</div>
+
+<form class="needs-validation" novalidate>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationCustom01">First name</label>
+      <input type="text" class="form-control" id="validationCustom01" value="Enter your first name" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="validationCustom02">Last name</label>
+      <input type="text" class="form-control" id="validationCustom02" value="Enter your last name" required>
+      <div class="valid-feedback">
+        Looks good!
+      </div>
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationCustom03">location</label>
+      <input type="text" class="form-control" value="Country+city" id="validationCustom03" required>
+      <div class="invalid-feedback">
+        Please provide a valid location.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationCustom04">Apply as a</label>
+      <select class="custom-select" id="validationCustom04" required>
+        <option selected disabled value="">apply as</option>
+        <option>apply as a Technical Analyst</option>
+         <option>apply as a Fundamental Analyst</option>
+          <option>apply as a Accountant</option>
+           <option>apply as an Engineer</option>
+            <option>apply as a computer operator</option>
+             <option>apply as a Programmer</option>
+              <option>apply as a stuff</option>
+               <option>apply as a normal employe</option>
+      </select>
+      <div class="invalid-feedback">
+        Please select a valid state.
+      </div>
+    </div>
+    <div class="col-md-3 mb-3">
+      <label for="validationCustom05">zip</label>
+      <input type="text" class="form-control" id="validationCustom05" required>
+      <div class="invalid-feedback">
+        Please provide a valid zip.
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+      <label class="form-check-label" for="invalidCheck">
+        Agree to terms and conditions
+      </label>
+      <div class="invalid-feedback">
+        You must agree before submitting.
+      </div>
+    </div>
+  </div>
+  <button class="btn btn1" type="submit">Submit form</button>
+</form>
+<script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
+<script src="https://kit.fontawesome.com/71d9d5edd9.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+</body>
+</html>
+</body>
+</html>
